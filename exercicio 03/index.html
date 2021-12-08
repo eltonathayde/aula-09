@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 03</title>
+</head>
+<body id="space">
+    <H1>RESPONDA O FORMULARIO:</H1>
+    <label>digite seu nome</label><br>
+    <input type="text" id="nome" placeholder="insira seu nome completo">
+    <br><label>digite sua idade</label><br><input type="number" id="idade">
+    <br><label>qual é sua profissão</label><br><input type="texte" id="profissão">
+    <br><label>selecione o seu sexo</label>
+    <Select id="box">
+        <option value="0">masculino</option>
+        <Option value="1">feminno</Option>
+    </Select>
+    <input type="submit" id="resultado" value="enviar" onclick="enviar()">
+<script>
+    function enviar(){
+           let opcao= parseInt(document.getElementById('box').value)
+           let resposta= document.getElementById('space')
+            console.log(opcao)
+           if(opcao === 0){
+           space.style.background="blue"
+           }else if(opcao===1){
+               space.style.background="pink"
+           }
+ }
+</script>
+
+    
+</body>
+</html>
